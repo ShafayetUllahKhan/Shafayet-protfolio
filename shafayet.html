@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shafayet Ullah Khan - Software Engineer</title>
+<meta name="description" content="Shafayet Ullah Khan - Software Engineering student at Daffodil International University. C, JavaScript, MySQL. Builder of practical, human-centered software." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Shafayet Ullah Khan - Software Engineer" />
+<meta property="og:description" content="Software Engineering student at DIU. C, JavaScript, MySQL, and a habit of building things that help people." />
+<meta property="og:type" content="website" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Shafayet Ullah Khan - Software Engineer" />
+<meta name="twitter:description" content="Software Engineering student at DIU. C, JavaScript, MySQL." />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%237C5CFF%22>S</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shafayet.css" />
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+<!-- Page loader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <span class="loader-mark">S<span class="loader-dot">.</span></span>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">SUK<span>.</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#journey">Journey</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#work">Work</a>
+    <a href="#journey">Journey</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow reveal-up">Software Engineering • Daffodil International University</p>
+      <h1 class="hero-title" id="heroTitle" aria-label="Shafayet Ullah Khan">
+        <span class="line" data-text="Shafayet..."></span>
+        <span class="line accent-line" data-text="Khan."></span>
+      </h1>
+      <p class="hero-sub reveal-up" style="--d:0.7s">
+        6th-semester builder who turns coursework into working software — a voting system, a farming assistant, an assistive device for the visually impaired. I like problems with a real person on the other end of them.
+      </p>
+      <div class="hero-actions reveal-up" style="--d:0.85s">
+        <a href="#work" class="btn btn-primary magnetic">
+          <span>View my work</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="mailto:ullah242-35-555@diu.edu.bd" class="btn btn-ghost magnetic">
+          <span>Say hello</span>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator reveal-up" style="--d:1.1s">
+      <span>Scroll</span>
+      <div class="scroll-line"><i></i></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Problem Solver</span><span>•</span>
+      <span>C &amp; JavaScript</span><span>•</span>
+      <span>Class Representative</span><span>•</span>
+      <span>Vice President, Notre Dame Science Club</span><span>•</span>
+      <span>Event Volunteer</span><span>•</span>
+      <span>Problem Solver</span><span>•</span>
+      <span>C &amp; JavaScript</span><span>•</span>
+      <span>Class Representative</span><span>•</span>
+      <span>Vice President, Notre Dame Science Club</span><span>•</span>
+      <span>Event Volunteer</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-head">
+        <p class="eyebrow reveal-up">01 - About</p>
+        <h2 class="section-title reveal-up">Community first,<br>code second — <span class="text-outline">both matter.</span></h2>
+      </div>
+      <div class="about-body">
+        <p class="reveal-up">
+          I'm a Software Engineering student at Daffodil International University, currently in my 6th semester. Most of what I've built started as coursework — a capstone, a robotics assignment, a systems requirement project — but I try to treat each one like it has a real user waiting on the other side.
+        </p>
+        <p class="reveal-up">
+          Outside the editor, I spend a lot of time on coordination — as Class Representative, as Vice President of the Notre Dame Science Club, and on the ground crew of university events.
+        </p>
+        <div class="about-stats">
+          <div class="stat reveal-up">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">Semesters at DIU</span>
+          </div>
+          <div class="stat reveal-up">
+            <span class="stat-num" data-count="7">0</span>
+            <span class="stat-label">Course &amp; capstone projects</span>
+          </div>
+          <div class="stat reveal-up">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Clubs &amp; committees</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow reveal-up">02 - Skills</p>
+      <h2 class="section-title reveal-up">What I actually work with.</h2>
+      <p class="section-lede reveal-up">
+        No inflated stack - just the languages, tools, and habits I use to get from a blank file to something that runs.
+      </p>
+      <div class="skills-filter reveal-up" role="tablist" aria-label="Skill categories">
+        <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="lang" role="tab" aria-selected="false">Languages</button>
+        <button class="chip" data-filter="web" role="tab" aria-selected="false">Web</button>
+        <button class="chip" data-filter="data" role="tab" aria-selected="false">Database</button>
+        <button class="chip" data-filter="tools" role="tab" aria-selected="false">Tools</button>
+        <button class="chip" data-filter="soft" role="tab" aria-selected="false">Soft Skills</button>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="work" id="work">
+    <div class="section-inner">
+      <p class="eyebrow reveal-up">03 - Selected Work</p>
+      <h2 class="section-title reveal-up">Coursework, taken seriously.</h2>
+      <p class="section-lede reveal-up">
+        Seven projects, seven different problems. Filter by course track or just scroll.
+      </p>
+      <div class="work-filter reveal-up" role="tablist" aria-label="Project categories">
+        <button class="chip is-active" data-pfilter="all" role="tab" aria-selected="true">All Projects</button>
+        <button class="chip" data-pfilter="capstone" role="tab" aria-selected="false">Capstone</button>
+        <button class="chip" data-pfilter="c" role="tab" aria-selected="false">C Systems</button>
+        <button class="chip" data-pfilter="social" role="tab" aria-selected="false">Social Impact</button>
+      </div>
+      <div class="work-grid" id="workGrid"></div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="journey" id="journey">
+    <div class="section-inner">
+      <p class="eyebrow reveal-up">04 - Journey</p>
+      <h2 class="section-title reveal-up">Where the hours went.</h2>
+      <p class="section-lede reveal-up">
+        Class coordination, club leadership, and event volunteering — the timeline behind the projects.
+      </p>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="achievements" id="achievements">
+    <div class="section-inner">
+      <p class="eyebrow reveal-up">05 - Achievements</p>
+      <h2 class="section-title reveal-up">Miles logged, not just commits.</h2>
+      <div class="ach-grid">
+        
+        <!-- Marathon Card -->
+        <div class="ach-card reveal-up">
+          <div class="ach-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Jugantorer Digonto 2025</h3>
+          <p>Ran in the Mini Marathon - trading keyboard time for pavement time.</p>
+          <button class="btn btn-ghost img-toggle-btn" data-img="marathonImg" style="margin-top: 15px; padding: 8px 16px;">Let's see me</button>
+          <img src="shafayetmarathon.jpg" id="marathonImg" class="ach-img hidden" alt="Marathon Achievement">
+        </div>
+
+        <!-- CGPA / Result Card -->
+        <div class="ach-card reveal-up">
+          <div class="ach-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Academic Excellence</h3>
+          <p>Spring 2026 SGPA: 3.89. Consistently maintaining strong academic standing.</p>
+          <button class="btn btn-ghost img-toggle-btn" data-img="cgpaImg" style="margin-top: 15px; padding: 8px 16px;">View Result</button>
+          <img src="shafayetsemresult.jpg" id="cgpaImg" class="ach-img hidden" alt="Semester Result">
+        </div>
+
+        <!-- Volunteering Card -->
+        <div class="ach-card reveal-up">
+          <div class="ach-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3 3 7l9 4 9-4-9-4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M3 7v10l9 4 9-4V7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Event Volunteering</h3>
+          <p>Daffodil Family Day, the 13th Convocation, Codetrap &amp; BreakOut Programming Contest.</p>
+        </div>
+
+      </div>
+      <div class="hobbies reveal-up">
+        <span class="hobbies-label">When I'm not doing either —</span>
+        <div class="hobbies-tags">
+          <span>Programming contests</span>
+          <span>Reading non-fiction &amp; tech books</span>
+          <span>Cricket</span>
+          <span>Football</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner contact-grid">
+      <div class="contact-head">
+        <p class="eyebrow reveal-up">06 - Contact</p>
+        <h2 class="section-title reveal-up">Have a project, a role,<br>or just a question?</h2>
+        <p class="section-lede reveal-up">
+          I reply fastest by email. Based in Dhaka, Bangladesh - happy to talk remote work too.
+        </p>
+        <div class="availability reveal-up">
+          <span class="dot"></span> Open to internships &amp; junior roles
+        </div>
+        <div class="contact-links reveal-up">
+          <a href="mailto:ullah242-35-555@diu.edu.bd" class="contact-link">
+            <span>Email</span>
+            <strong>ullah242-35-555@diu.edu.bd</strong>
+          </a>
+          <a href="tel:+8801614161485" class="contact-link">
+            <span>Phone</span>
+            <strong>+880 1614-161485</strong>
+          </a>
+          
+          <!-- Download CV Button -->
+          <a href="cv.pdf" download class="btn btn-primary magnetic" style="margin-top: 15px; display: inline-flex; justify-content: center; width: 100%;">
+            <span>Download CV</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="margin-left: 8px;"><path d="M8 13V3M3 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal-up" id="contactForm" novalidate>
+        <div class="field">
+          <input type="text" id="cf-name" name="name" required placeholder=" " />
+          <label for="cf-name">Your name</label>
+          <span class="field-err">Please enter your name</span>
+        </div>
+        <div class="field">
+          <input type="email" id="cf-email" name="email" required placeholder=" " />
+          <label for="cf-email">Your email</label>
+          <span class="field-err">Please enter a valid email</span>
+        </div>
+        <div class="field">
+          <textarea id="cf-message" name="message" rows="4" required placeholder=" "></textarea>
+          <label for="cf-message">Message</label>
+          <span class="field-err">Please write a short message</span>
+        </div>
+        <button type="submit" class="btn btn-primary magnetic full">
+          <span>Send message</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <a href="#hero" class="footer-logo">SUK<span>.</span></a>
+    
+    <!-- FIXED FOOTER LINKS -->
+    <div class="footer-social">
+      
+      <a href="https://github.com/ShafayetUllahKhan" target="_blank" aria-label="GitHub">GitHub</a>
+      <a href="https://www.linkedin.com/in/shafayet-ullah-khan?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://www.instagram.com/myself.zihad?igsh=MTJkcmlzMGM4aWtueA==" target="_blank" aria-label="Instagram">Instagram</a>
+      <a href="https://www.facebook.com/share/1BnG9PWBDQ/" target="_blank" aria-label="Facebook">Facebook</a>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+  <p class="footer-fine">© 2026 Shafayet Ullah Khan. Built with care in Dhaka.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="shafayet.js"></script>
+</body>
+</html>
